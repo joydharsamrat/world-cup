@@ -10,6 +10,7 @@ body {
 }
 
 .top-section {
+    position: relative;
     display: flex;
     width: 85%;
     justify-content: space-around;
@@ -58,6 +59,41 @@ body {
 
 .fa-arrow-right {
     margin-left: 15px;
+}
+
+@keyframes football {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: 83%;
+    }
+
+    50% {
+        top: 0%;
+    }
+
+    75% {
+        top: 83%;
+    }
+
+    100% {
+        left: 92%;
+        top: 0%;
+    }
+}
+
+.football {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: football 5s ease .5s infinite alternate;
+    animation-play-state: running;
+}
+
+.football img {
+    width: 100px;
 }
 
 /* main section styles */
@@ -180,6 +216,23 @@ main {
     margin-left: 15px;
 }
 
+/* styles for wiew all button for tablet devices */
+.view-all-btn button {
+    background-color: #DD0000;
+    padding: 12px 29px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
+
+.view-all-btn {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer styles  */
 footer {
     display: flex;
     justify-content: center;
@@ -335,6 +388,10 @@ hr {
 
     .match-articles {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-all-btn {
+        display: block;
     }
 
     .bottom-nav {
