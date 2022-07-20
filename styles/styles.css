@@ -24,7 +24,6 @@ body {
 
 .article-details {
     width: 100%;
-
 }
 
 .headline {
@@ -35,6 +34,10 @@ body {
 .text {
     font-weight: 400;
     font-size: 16px;
+}
+
+.article-banner {
+    width: 100%;
 }
 
 .article-banner img {
@@ -209,7 +212,8 @@ main {
 
 .blogs .info {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 30px;
 }
 
 .number {
@@ -312,10 +316,25 @@ hr {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        width: 80%;
     }
 
     .article-details {
         text-align: center;
+    }
+
+    .headline {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 14px;
+        height: 45px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
 
     .watch-live {
